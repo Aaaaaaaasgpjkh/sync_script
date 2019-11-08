@@ -44,8 +44,8 @@ done
 echo "\n"
 }
 
-directory1="/home/alexey/LAB"
-directory2="/media/alexey/KINGSTON/LAB"
+directory1="/home/username/LAB"
+directory2="/media/username/KINGSTON/LAB"
 echo dir1 is $directory1
 echo dir2 is $directory2
 if [ ! -d "$directory1" ]; then
