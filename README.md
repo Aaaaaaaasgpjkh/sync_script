@@ -8,5 +8,5 @@
 - Write task
   ```
   DISPLAY=:0
-  * * * * * /home/username/syn.sh
+  * * * * * /home/username/syn.sh >> syn.log
   ```
