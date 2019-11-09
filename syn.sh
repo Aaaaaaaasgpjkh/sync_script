@@ -10,7 +10,7 @@ echo "Viewed file: " $dir1/$i
 if [ -f "$dir2/$i" ] && [ -f "$dir1/$i" ]; then
     echo "CONFLICT"
     echo "\t" 1 Date of last mod: "$dir1/$i:" $(date -r "$dir1/$i")
-    echo "\t" 2 Date of last mod: "$dir2/$i: $(date -r "$dir2/$i")"
+    echo "\t" 2 Date of last mod: "$dir2/$i:" $(date -r "$dir2/$i")
     exec 3>&1
     result=$(gdialog --title "CONFLICT" --menu "Which file?" 15 80 2 1 "$dir1/$i: $(date -r "$dir1/$i")"  2 "$dir2/$i: $(date -r "$dir2/$i")"  2>&1 1>&3)
     echo "result=" $result
